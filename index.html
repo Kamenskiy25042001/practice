@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Рекламное Электронное Табло</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Главный экран -->
+    <header id="header">
+        <div class="container">
+            <h1>Рекламное Электронное Табло</h1>
+            <p>Создано на основе светодиодной матрицы и Arduino UNO</p>
+            <a href="#contact" class="cta-btn">Связаться с нами</a>
+        </div>
+    </header>
+
+    <!-- Описание устройства -->
+    <section id="about">
+        <div class="container">
+            <h2>О нашем устройстве</h2>
+            <p>Это рекламное электронное табло на основе светодиодной матрицы и Arduino UNO для отображения бегущей строки с текстом, которое идеально подходит для использования в общественных местах, магазинах и на выставках.</p>
+            <img src="device-image.png" alt="Рекламное табло" class="device-img">
+        </div>
+    </section>
+
+    <!-- Характеристики -->
+    <section id="features">
+        <div class="container">
+            <h2>Характеристики устройства</h2>
+            <ul>
+                <li>Светодиодная матрица 8x32</li>
+                <li>Управление через Arduino UNO</li>
+                <li>Поддержка различных режимов отображения</li>
+                <li>Простота настройки и использования</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Форма обратной связи -->
+    <section id="contact">
+        <div class="container">
+            <h2>Свяжитесь с нами</h2>
+            <form id="contact-form" action="send_email.php" method="POST">
+                <input type="text" name="name" placeholder="Ваше имя" required>
+                <input type="email" name="email" placeholder="Ваш e-mail" required>
+                <textarea name="message" placeholder="Ваше сообщение" required></textarea>
+                <button type="submit">Отправить</button>
+                <div id="response-message"></div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Рекламное Электронное Табло. Все права защищены.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
